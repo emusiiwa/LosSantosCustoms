@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="usersign.css">
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+  <link rel="icon" type="image/x-icon" href="Images/Car Sale Website Images/fav-icon.png">
+  <title>Los Santos Customs</title>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <a href="JS_index.html" class="logo">Los <span>Santos</span> Customs</a>
+
+    </nav>
+
+  </header>
+
+  <div class="container">
+
+    <form class="toggle">
+
+        <input type="radio" id="choice1" name="choice" value="creative" onclick="navigateToPage(this.value)">
+        <label for="choice1">Client</label>
+
+        <input type="radio" id="choice2" name="choice" value="productive" onclick="navigateToPage(this.value)">
+        <label for="choice2">Staff</label>
+
+        <div id="flap"><span class="content">productive</span></div>
+
+    </form>
+
+</div>
+
+<script>
+  function navigateToPage(page) {
+            if (page === "creative") {
+                window.location.href = "login.php"; 
+            } else if (page === "productive") {
+                window.location.href = "stafflog.php";
+            }
+        }
+</script>
+
+<script src="usersign.js"></script>
+
+    
+</body>
+</html>

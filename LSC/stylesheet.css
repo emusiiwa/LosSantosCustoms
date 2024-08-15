@@ -1,0 +1,757 @@
+/*red = #d90429, white = #fff, black = #020102*/
+
+/*this styling will affect the whole page  and not only a specific area*/
+*{
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*scroll bar*/
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: #020102;
+}
+
+/*all sections will be affected by this padding*/
+section{
+    padding: 4rem 0 2rem;
+}
+
+iframe{
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height:800px;
+}
+
+table{
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*all images will be affected by this width specification*/
+img{
+    width: 100%;
+}
+
+/*the entire body area will be affected by this section*/
+body{
+    background-color: #fff;
+   
+}
+
+/*everything under nav section will be affected by the specified styles*/
+nav{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*everything under header section will be affected by the specified styles*/
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header.shadow{
+    background: #fff;
+    box-shadow: 4px 4px 20px rgb(15, 54, 55 / 10%);
+    transition: 0.5s ease;
+}
+
+/*everything under nav section will be affected by the specified styles*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+/*everything under class navbarsearch will be affected by the specified styles*/
+.navbarsearch{
+    float: right;
+}
+
+@keyframes animatelossantos { /*animation for all classes with name .logo */
+    0% {opacity: 100%;}
+    50%{opacity: 50%;}
+    100%{opacity: 100%;}
+}
+
+/*the input search bar will change color/focus when pressed*/
+input[type=text]:focus {
+    background-color: lightgrey;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: #020102;
+    display: none;
+}
+
+/*everything under class logo will be affected by the specified styles*/
+.logo{ 
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #020102 ;
+    
+}
+
+/*every span in an element with class logo will be affected by the specified styles*/
+.logo span{
+    color: #d90429;
+    animation: 2s animatelossantos infinite;
+}
+
+/*everything under class navbar will be affected by the specified styles*/
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+
+/*every list in the nav section will be affected by the specified styles*/
+nav li{
+    display: inline;
+}
+
+/*every hyperlink in navbar section will be affected by the specified styles*/
+.navbar a{
+    color:#020102;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline;
+}
+
+/*this affects navbar link when hovered and when you are at the specified link page*/
+.navbar a:hover, .navbar .current{
+    color: #d90429;
+    border-bottom: 3px solid #d90429;
+}
+
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 4px 4px 20px rgb(15, 54, 55 / 10%);
+    border: 1px solid #d90429;
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+/*this affects everything under the class home*/
+.home{
+    max-width: auto;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url('Images/Car Sale Website Images/Background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+/*this affects everything under the home-info class*/
+.home-info{
+    padding-left: 130px;
+}
+
+/*this affects every h1 heading under the home-info class*/
+.home-info h1{
+    font-size: 2.4rem;
+}
+
+/*this affects every span under the home-info class*/
+.home-info span{
+    color: #d90429;
+}
+
+/*this affects every paragraph under the home-info class*/
+.home-info p{
+    font-size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+
+/*this affects every thing within the class button*/
+.button{
+    padding: 10px 22px;
+    background: #d90429;
+    color: #fff;
+    font-weight: 400;
+}
+
+/*this affects every thing within the class button1*/
+.button1{
+    padding: 10px 22px;
+    background: #fff;
+    color: #020102;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*this affects every thing within the class button1*/
+.button1:hover{
+    background: #fd052f;
+}
+
+/*this affects every thing within the class button*/
+.button:hover{
+    background: #fd052f;
+}
+
+/*this affects every thing within the class heading*/
+.heading{
+    text-align: center;
+}
+
+/*this style affects every span in the heading class*/
+.heading span{
+    font-weight: 500;
+    color: #d90429;
+}
+
+/*this style affects every paragraph in the heading class*/
+.heading p{
+    font-size: 0.938rem;
+    font-weight: 300;
+}
+
+/*This adds a Box model*/
+box {
+    background-color: lightgrey;
+    width: 300px;
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+  }
+
+/*This styling makes stripped tables with grey strips*/
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+/*this style affects everything in the cars-container class*/
+.cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/*this style affects everything in the box class that is within the cars-container class*/
+.cars-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/*this style affects every image in the box class that is in the cars-container class*/
+.cars-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/*this style affects every image in the box class that is within the cars-container class when you hover over it*/
+.cars-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*this style affects every h2 heading in the box class that is within the cars-container class*/
+.cars-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: #fff;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+
+/*this style affects every h2 heading in the box class that is within the cars-container class when you hover over it*/
+.cars-container .box:hover h2{
+    background: #d90429;
+    color: #fff;
+}
+
+
+/*this style affects everything under the blog-container class*/
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/*this style affects every box class item under the blog-container class*/
+.blog-container .box{
+    flex: 1 1 13rem;
+    padding: 20px;
+}
+
+/*this style affects every box class item when you hover under the blog-container class*/
+.blog-container .box:hover{
+    background: #f6f6f6;
+}
+
+/*this style affects every span in the box class under the blog-container class*/
+.blog-container .box span{
+    font-size: 0.8rem;
+    color: #d90429;
+}
+
+/*this style affects every h3 heading under the blog-container class*/
+.blog-container h3{
+    font-size: 1.2rem;
+}
+
+/*this style affects every paragraph in the box class under the blog-container class*/
+.blog-container .box p{
+    font-size: 0.938rem;
+    margin: 4px 0;
+}
+
+/*this style affects everything in the blog-btn class within the box class under the blog-container class*/
+.blog-container .box .blog-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: #020102;
+}
+
+/*this style affects everything with the class bx in the blog-btn class within the box class under the blog-container class*/
+.blog-container .box .blog-btn .bx{
+    font-size: 20px;
+}
+
+/*this style affects everything in the blog-btn class within the box class under the blog-container class when you hover over it*/
+.blog-container .box .blog-btn:hover{
+    color: #d90429;
+    column-gap: 0.7rem;
+    transition: 0.4s;
+}
+
+/*this affects everything in the about-info class*/
+.about-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/*this affects everything in the about-pic class*/
+.about-pic{
+    flex: 1 1 21rem;
+}
+
+/*this affects everything in the about-info-text class*/
+.about-info-text{
+    flex: 1 1 21rem;
+}
+
+/*this affects every span in the about-info-text class*/
+.about-info-text span{
+    font-weight: 500;
+    color: #fff;
+}
+
+/*this affects every h2 heading in the about-info class*/
+.about-info-text h2{
+    font-size: 1.7rem;
+}
+
+/*this affects every paragraph heading in the about-info class*/
+.about-info-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+}
+
+/*this affects the footer section*/
+footer{
+    background: #020102;
+    color: #f6f6f6;
+    border-top: 2px solid #fff;
+}
+
+/*this affects everything with the footer-container class*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/*this affects everything with the class logo within the footer-container class*/
+.footer-container .logo{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/*this affects everything with the class footer-box within the footer-container class*/
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
+
+/*this affects everything with the class social-media*/
+.social-media{
+    display: flex;
+    align-items: center;
+}
+
+/*this affects every hyperlink in the class social-media*/
+.social-media a{
+    font-size: 24px;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+/*this affects every hyperlink in the class social-media when you hover over it*/
+.social-media a:hover{
+    color: #d90429;
+}
+
+/*this affects every h3 heading in the class footer-box*/
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/*this affects every hyperlink and paragraph element in the class footer-box*/
+.footer-box a,
+.footer-box p{
+    color: #818181;
+    margin-bottom: 10px;
+}
+
+/*this affects every hyperlink in the class footer-box when ypu hover over it*/
+.footer-box a:hover{
+    color: #d90429;
+}
+
+/*this affects everything in the class copyright*/
+.copyright{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background: #020102;
+}
+
+/*this affects everything in the class dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/*this affects everything in the class dropdown-content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/*this affects every hyperlink in the class dropdown-content*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*this affects every hyperlink in the class dropdown-content when you hover over it*/
+.dropdown-content a:hover {
+    color: #d90429;
+    border-bottom: 3px solid #d90429;
+}
+
+/*this affects every hyperlink in the class dropdown-content and dropdown when you hover*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*this affects the dropdown class when you hover to show the dropdown list and the drop-link class when*/
+.dropdown:hover .drop-link {
+    color: #d90429;
+    border-bottom: 3px solid #d90429;
+}
+
+/*Slideshow gallery for images*/
+
+/* {
+    box-sizing: border-box;
+  }/
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .slideshowcontainer {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .myslides img{
+    height: 400px;
+    width: 600px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+#Makes an image float to the right
+logos{
+    float: right; 
+}
+
+
+/*this code is so that the website appears properly on all different media platforms eg phone, laptop, tablet etc*/
+@media (max-width: 1080px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 991px){
+    .nav{
+        padding: 15px 20px;
+    }
+
+    section{
+        padding: 3rem 0 1rem;
+    }
+
+    .home-info{
+        padding-left: 2rem;
+    }
+
+    .home-info h1{
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .search-box input{
+        padding: 15px;
+    }
+
+    .nav{
+        padding: 10px 0;
+    }
+
+    #menu-icon{
+        display: initial;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        row-gap: 0.5rem;
+        text-align: center;
+        box-shadow: 4px 4px 20px rgb(15, 54, 55 / 20%);
+        clip-path: circle(0% at 0% 0%);
+        transition: 0.6s;
+    }
+
+    .navbar a{
+        display: block;
+        padding: 15px;
+    }
+
+    .navbar a:hover,
+    .navbar .active{
+        border-bottom: none;
+        background: #d90429;
+        color: #fff;
+    }
+
+    .navbar .active{
+        clip-path: circle(144% at 0% 0%);
+    }
+
+    .blog-container .box{
+        padding: 4px;
+    }
+}
+
+@media (max-width:727px) {
+    .heading span{
+        font-size: 0.9rem;
+    }
+
+    .heading h2{
+        font-size: 1.4rem;
+    }
+
+    .about-info{
+        flex-direction: column-reverse;
+    }
+
+    .about-info-text{
+        text-align: center;
+    }
+
+    .about-info-text h2{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:607px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:360px){
+    .home{
+        min-height: 500px;
+    }
+
+    .home-info h1{
+        font-size: 2rem;
+    }
+
+    .home-info p br{
+        display: contents;
+    }
+}
+
+ol, ul{
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ 

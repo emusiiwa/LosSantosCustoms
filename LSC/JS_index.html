@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+  <link rel="icon" type="image/x-icon" href="Images/Car Sale Website Images/fav-icon.png">
+  <title>Los Santos Customs</title>
+</head>
+
+<body ononline="online()" onoffline="offline()">
+  <header style="background-color: #fff;">
+
+    <nav>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <a href="JS_index.html" class="logo">Los <span>Santos</span> Customs</a>
+
+      <ul class="navbar">
+        <li><a href="JS_index.html" class="current">Home</a></li>
+        <li><a href="cars.php">Cars</a></li>
+        <li><a href="team.html">About</a></li>
+        <li><a href="#" onclick="scrollDown()">Blog</a></li>
+
+        <div class="dropdown">
+          <li class="drop-link"><a href="#">Dealerships</a></li>
+          <div class="dropdown-content">
+            <a href="#">Johannesburg</a>
+            <a href="#">Cape Town</a>
+            <a href="#">Durban</a>
+          </div>
+        </div>
+      </ul>
+
+      <a href="usersignup.html" class="button1">Log-In</a>
+
+    </nav>
+
+  </header>
+
+  <section class="home" id="home">
+
+    <section class="home-info">
+      <h1>Find Your Next Car <br>At the <span>BEST PRICE</span></h1>
+      <p>Allow us to guide you through the innovative stress free approach <br> In finding your dream car</p>
+      <a href="cars.php" class="button" onmouseover="mOver(this)" onmouseout="mOut(this)">Take A look Around</a>
+    </section>
+  </section>
+
+  <section class="cars" id="cars">
+
+    <section class="heading">
+      <span>High Class Cars</span>
+      <p>We offer professional car sale services in our range of high-end vehicles</p>
+    </section>
+
+    <div class="cars-container container">
+      <div class="box">
+        <img src="Images/cars/c-class-amg-coupe.png" alt="Coupe Picture">
+        <h2 ondblclick="openlink()">Coupe</h2>
+      </div>
+      <div class="box">
+        <img src="Images/cars/sclass.jfif" alt="Sedan Picture">
+        <h2 ondblclick="openlink()">Sedan</h2>
+      </div>
+      <div class="box">
+        <img src="Images/cars/gclass.jpg" alt="SUV Picture">
+        <h2 ondblclick="openlink()">SUV</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+
+    <section class="heading">
+      <span>Blog & News</span>
+      <h2>Our Blog Content</h2>
+      <p>Here's some news about cars all over South Africa and the rest of the world!</p>
+    </section>
+
+    <div class="blog-container container">
+      <div class="box">
+        <img src="Images/Car Sale Website Images/motoring.jpg" alt="image1">
+        <span>March 21 2023</span>
+        <h3>Festival Of Motoring</h3>
+        <p>Festival Of Motoring Proves South Africa's Appetite For Motorsport</p>
+        <a href="https://headtopics.com/za/festival-of-motoring-proves-south-africa-s-appetite-for-motorsport-45093122" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+
+      <div class="box">
+        <img src="Images/Car Sale Website Images/goodwood.jpg" alt="image2">
+        <span>April 2 2023</span>
+        <h3>Goodwood Festival of Speed</h3>
+        <p>The world's greatest celebration of motorsport and car culture!</p>
+        <a href="https://www.motortrend.com/events/coolest-cars-of-the-2023-goodwood-festival-of-speed/" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+
+      <div class="box">
+        <img src="Images/Car Sale Website Images/car3.jpg" alt="image3">
+        <span>May 1 2023</span>
+        <h3>Electric Cars And Gasoline Engines</h3>
+        <p>Electric Cars Won’t Kill Powerful Gasoline Engines—at Least For the Rich</p>
+        <a href="https://www.motortrend.com/features/why-electric-cars-wont-kill-powerful-gasoline-combustion-engines-for-the-rich/" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about-info" id="about-info">
+    <div class="about-pic">
+      <img src="Images/Car Sale Website Images/about.png" alt="info image">
+    </div>
+    
+    <div class="about-info-text">
+      <span>About Us</span>
+      <h2>Cheap Prices With<br>Quality Cars</h2>
+      <p>Los Santos Customs makes buying and selling cars fast, intuitive and reliable.</p>
+      <a href="team.html" class="button">Learn More</a>
+    </div>
+
+  </section>
+
+  
+  <footer>
+    <scrollbutton class="logo" onclick="scrollUp()"><span>PRESS TO SCROLL UP</span></scrollbutton>
+  
+
+    <div class="footer-container container">
+      <div class="footer-box">
+        <a href="JS_index.html" class="logo">Los <span>Santos</span> Customs</a>
+        <div class="social-media">
+          <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+          <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+          <a href="#"><i class='bx bxl-google' ></i></a>
+          <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+          <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div>
+      </div>
+     
+
+      <div class="footer-box">
+        <h3>Page</h3>
+        <a href="JS_index.html">Home</a>
+        <a href="cars.php">Cars</a>
+        <a href="team.html">About</a>
+        <a href="JS_index.html">Blog</a>
+        <a href="#">Dealerships</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Support</h3>
+        <a href="#">Advisories</a>
+        <a href="#" id="popup">Help</a>
+        <a href="#">Find Dealership</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p>Casey Chuma: 0680993179</p>
+        <p>Roland Chuma:0615850984</p>
+        <p>Emmanuel Musiiwa: 0789942877</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <section class="copyright">
+    <p>You can find us at: 3147 Prince Alfred St, Grahamstown, Makhanda, 6139 <br>
+      © 2023 WebTech Project. All Rights Reserved. Proudly created by Group Kali
+    </p>
+  </section>
+  
+  <script src="main.js"></script>
+  <script src="functions.js"></script>
+  <script src="navigator.js"></script>
+
+  
+</body>
+</html>
