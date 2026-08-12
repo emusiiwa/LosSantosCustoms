@@ -1,0 +1,141 @@
+/* Login/Signup/StaffLogin rules on top of base.css - ported from LSC/login.css.
+   These pages never loaded stylesheet.css in the original, so they intentionally
+   don't get the .logo pulse animation, the dropdown, or the full .button1 nav styling.
+   The original's `body { overflow:hidden; height:100vh }` is rescoped to
+   `.minimal-layout` here instead of the literal `body` selector, since in a SPA
+   `body` always exists and would otherwise break scrolling on every other route. */
+
+.minimal-layout {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 245, 245);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.log-in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.log-in h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: #818181;
+}
+
+.log-in form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .user {
+  position: relative;
+  border-bottom: 2px #818181;
+  margin: 30px 0;
+}
+
+.user input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.user label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #818181;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 1s;
+}
+
+.user span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #d90429;
+  transition: 1s;
+}
+
+.user input:focus ~ label,
+.user input:valid ~ label {
+  top: -5px;
+  color: #d90429;
+}
+
+.user input:focus ~ span::before,
+.user input:valid ~ span::before {
+  width: 100%;
+}
+
+.user-pass {
+  margin: -5px 0 20px 5px;
+  color: #818181;
+  cursor: pointer;
+}
+
+.user-pass:hover {
+  text-decoration: underline;
+}
+
+.log-in input[type='submit'] {
+  width: 100%;
+  height: 50px;
+  border: solid 1px;
+  background: #d90429;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+.log-in input[type='submit']:hover {
+  border-color: #818181;
+  transition: 1s;
+}
+
+.register {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #818181;
+}
+
+.register a {
+  color: #d90429;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.password {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #000;
+}
+
+.pass-icon {
+  position: absolute;
+  right: 5px;
+  width: 40px;
+  cursor: pointer;
+}

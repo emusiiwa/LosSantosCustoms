@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "make": "Mercedes-Benz",
+    "model": "C-Class AMG Coupe",
+    "manufactureYear": "2022-03-01",
+    "price": 68500,
+    "type": "coupe",
+    "engineNumber": "ENG-10234",
+    "description": "A sharp, sporty coupe with AMG styling and a punchy turbo engine.",
+    "image": "c-class-amg-coupe.png",
+    "transmission": "automatic",
+    "colour": "Obsidian Black",
+    "dealership": "Johannesburg"
+  },
+  {
+    "id": 2,
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "manufactureYear": "2021-06-15",
+    "price": 52900,
+    "type": "sedan",
+    "engineNumber": "ENG-10557",
+    "description": "A comfortable, well-equipped executive sedan for daily driving.",
+    "image": "cclass.jpg",
+    "transmission": "automatic",
+    "colour": "Polar White",
+    "dealership": "Cape Town"
+  },
+  {
+    "id": 3,
+    "make": "Mercedes-Benz",
+    "model": "G-Wagon",
+    "manufactureYear": "2023-01-20",
+    "price": 165000,
+    "type": "SUV",
+    "engineNumber": "ENG-11890",
+    "description": "The iconic boxy off-roader, built tough and finished luxuriously.",
+    "image": "g-wagon.jpeg",
+    "transmission": "automatic",
+    "colour": "Selenite Grey",
+    "dealership": "Johannesburg"
+  },
+  {
+    "id": 4,
+    "make": "Mercedes-Benz",
+    "model": "G-Class",
+    "manufactureYear": "2020-11-05",
+    "price": 142000,
+    "type": "SUV",
+    "engineNumber": "ENG-09321",
+    "description": "A slightly older G-Class in excellent condition, ready for anything.",
+    "image": "gclass.jpg",
+    "transmission": "automatic",
+    "colour": "Alpine Grey",
+    "dealership": "Durban"
+  },
+  {
+    "id": 5,
+    "make": "Mercedes-Benz",
+    "model": "S-Class",
+    "manufactureYear": "2022-09-10",
+    "price": 118000,
+    "type": "sedan",
+    "engineNumber": "ENG-12045",
+    "description": "The flagship saloon - effortless power and first-class comfort.",
+    "image": "sclass.jpg",
+    "transmission": "automatic",
+    "colour": "Diamond Silver",
+    "dealership": "Cape Town"
+  }
+]

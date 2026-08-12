@@ -1,0 +1,426 @@
+/* red = #d90429, white = #fff, black = #020102
+   Public/staff site rules on top of base.css - ported from LSC/stylesheet.css.
+   Dead/unused blocks from the original (the slideshow gallery, .search-box,
+   the fake `box`/`logos` element selectors) were dropped, nothing referenced them. */
+
+section {
+  padding: 4rem 0 2rem;
+}
+
+iframe {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 800px;
+}
+
+input[type='text']:focus {
+  background-color: lightgrey;
+}
+
+/* Small circular icon buttons/links used in the nav (View Site, Log-Out)
+   instead of full text buttons. */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid #020102;
+  background: transparent;
+  color: #020102;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.icon-button:hover {
+  background: #020102;
+  color: #fff;
+}
+
+.icon-button--danger {
+  border-color: #d90429;
+  color: #d90429;
+}
+
+.icon-button--danger:hover {
+  background: #d90429;
+  color: #fff;
+  border-color: #d90429;
+}
+
+@keyframes animatelossantos {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.logo span {
+  animation: 2s animatelossantos infinite;
+}
+
+.navbarsearch {
+  float: right;
+}
+
+.home {
+  max-width: auto;
+  margin: auto;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background-image: var(--home-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+
+.home-info {
+  padding-left: 130px;
+}
+
+.home-info h1 {
+  font-size: 2.4rem;
+}
+
+.home-info span {
+  color: #d90429;
+}
+
+.home-info p {
+  font-size: 0.938rem;
+  font-weight: 300;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.button {
+  padding: 10px 22px;
+  background: #d90429;
+  color: #fff;
+  font-weight: 400;
+}
+
+.button:hover {
+  background: #fd052f;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading span {
+  font-weight: 500;
+  color: #d90429;
+}
+
+.heading p {
+  font-size: 0.938rem;
+  font-weight: 300;
+}
+
+.cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cars-container .box {
+  flex: 1 1 17rem;
+  position: relative;
+  height: 200px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.cars-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.cars-container .box img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.cars-container .box h2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  background: #fff;
+  padding: 8px;
+  border-radius: 0.5rem;
+}
+
+.cars-container .box:hover h2 {
+  background: #d90429;
+  color: #fff;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-container .box {
+  flex: 1 1 13rem;
+  padding: 20px;
+}
+
+.blog-container .box:hover {
+  background: #f6f6f6;
+}
+
+.blog-container .box span {
+  font-size: 0.8rem;
+  color: #d90429;
+}
+
+.blog-container h3 {
+  font-size: 1.2rem;
+}
+
+.blog-container .box p {
+  font-size: 0.938rem;
+  margin: 4px 0;
+}
+
+.blog-container .box .blog-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  color: #020102;
+}
+
+.blog-container .box .blog-btn .bx {
+  font-size: 20px;
+}
+
+.blog-container .box .blog-btn:hover {
+  color: #d90429;
+  column-gap: 0.7rem;
+  transition: 0.4s;
+}
+
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-pic {
+  flex: 1 1 21rem;
+}
+
+.about-info-text {
+  flex: 1 1 21rem;
+}
+
+.about-info-text span {
+  font-weight: 500;
+  color: #fff;
+}
+
+.about-info-text h2 {
+  font-size: 1.7rem;
+}
+
+.about-info-text p {
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.4rem;
+}
+
+footer {
+  background: #020102;
+  color: #f6f6f6;
+  border-top: 2px solid #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-container .logo {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-container .footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media a {
+  font-size: 24px;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.social-media a:hover {
+  color: #d90429;
+}
+
+.footer-box h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.footer-box a,
+.footer-box p {
+  color: #818181;
+  margin-bottom: 10px;
+}
+
+.footer-box a:hover {
+  color: #d90429;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Scoped as .dropdown .dropdown-content a (rather than the bare
+   .dropdown-content a) so this reliably beats base.css's `.navbar a` rule -
+   same specificity otherwise, which let the dropdown items render as
+   run-on inline nav text instead of a stacked list. Also resets the
+   uppercase/bold nav typography they were inheriting. */
+.dropdown .dropdown-content a {
+  display: block;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: none;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown .dropdown-content a:hover {
+  color: #d90429;
+  border-bottom: 3px solid #d90429;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .drop-link {
+  color: #d90429;
+  border-bottom: 3px solid #d90429;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  section {
+    padding: 3rem 0 1rem;
+  }
+
+  .home-info {
+    padding-left: 2rem;
+  }
+
+  .home-info h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-container .box {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 727px) {
+  .heading span {
+    font-size: 0.9rem;
+  }
+
+  .heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-info {
+    flex-direction: column-reverse;
+  }
+
+  .about-info-text {
+    text-align: center;
+  }
+
+  .about-info-text h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 607px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .home {
+    min-height: 500px;
+  }
+
+  .home-info h1 {
+    font-size: 2rem;
+  }
+
+  .home-info p br {
+    display: contents;
+  }
+}
+
+ol,
+ul {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}

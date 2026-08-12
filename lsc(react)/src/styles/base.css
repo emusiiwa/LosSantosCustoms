@@ -1,0 +1,166 @@
+/* Shared reset + nav/header/logo/button shell, deduped from the near-identical
+   copies that stylesheet.css, login.css, team.css and usersign.css each carried
+   in the original PHP site. Imported once, globally, in main.jsx. */
+
+* {
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+  background: #020102;
+}
+
+body {
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+table {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header.shadow {
+  background: #fff;
+  box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+  transition: 0.5s ease;
+}
+
+nav {
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+nav li {
+  display: inline;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #020102;
+}
+
+.logo span {
+  color: #d90429;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.navbar a {
+  color: #020102;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline;
+}
+
+.navbar a:hover,
+.navbar .current {
+  color: #d90429;
+  border-bottom: 3px solid #d90429;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #020102;
+  display: none;
+}
+
+.button1 {
+  display: inline-block;
+  padding: 10px 22px;
+  border: none;
+  background: #fff;
+  color: #020102;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background: #fd052f;
+}
+
+.copyright {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background: #020102;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 10px 0;
+  }
+
+  #menu-icon {
+    display: initial;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    row-gap: 0.5rem;
+    text-align: center;
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 20%);
+    clip-path: circle(0% at 0% 0%);
+    transition: 0.6s;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 15px;
+  }
+
+  .navbar a:hover,
+  .navbar.active a {
+    border-bottom: none;
+  }
+
+  .navbar.active {
+    clip-path: circle(144% at 0% 0%);
+  }
+}

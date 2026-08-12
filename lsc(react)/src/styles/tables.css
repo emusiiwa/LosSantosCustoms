@@ -1,0 +1,200 @@
+/* Shared listing-table look, used by every staff/customer list page
+   (Employees/Garage/AllBookings/MyBookings/Cars). Originally consolidated
+   from 5 near-identical inline <style> blocks in the PHP source; since then
+   redesigned to sit in a card (matching the dashboard's "Recents" widget)
+   with a softer hover and branded action buttons instead of raw browser
+   button chrome. */
+
+.table-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+  padding: 0.5rem 1.5rem 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.data-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-table td,
+.data-table th {
+  border: none;
+  padding: 14px 10px;
+  text-align: left;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: rgba(50, 115, 220, 0.05);
+}
+
+.data-table tbody tr:hover {
+  background-color: rgba(217, 4, 41, 0.07);
+}
+
+.data-table th {
+  background-color: #d90429;
+  color: #fff;
+}
+
+.data-table th:first-child {
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+
+.data-table th:last-child {
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+
+.data-table img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+.table-empty {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: #818181;
+}
+
+/* Search/filter bar above a table-card: a text search field (with icon) and
+   any number of <select> filters, sized and styled consistently instead of
+   raw browser inputs sitting loose on the page. */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
+}
+
+.search-field {
+  position: relative;
+  flex: 1 1 260px;
+}
+
+.search-field .bx {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #818181;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.search-bar input[type='text'],
+.search-bar select {
+  height: 42px;
+  width: 100%;
+  padding: 0 16px;
+  border: 1.5px solid #e5e4e7;
+  border-radius: 999px;
+  background: #fff;
+  color: #020102;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-field input[type='text'] {
+  padding-left: 40px;
+}
+
+.search-bar select {
+  width: auto;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.search-bar input[type='text']:focus,
+.search-bar select:focus {
+  border-color: #d90429;
+}
+
+/* Pagination controls under a table-card: Previous/Next + page numbers,
+   reusing the same pill-button look as row actions below. */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
+}
+
+/* Small pill-shaped action buttons/links used inside table rows, replacing
+   raw unstyled <button>/<input type=button> chrome. */
+.table-action {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 2px;
+  border-radius: 999px;
+  border: 1.5px solid #020102;
+  background: transparent;
+  color: #020102;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.table-action:hover {
+  background: #020102;
+  color: #fff;
+}
+
+.table-action:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.table-action:disabled:hover {
+  background: transparent;
+  color: #020102;
+}
+
+.table-action--primary:disabled:hover {
+  background: #d90429;
+  color: #fff;
+}
+
+.table-action--primary {
+  border-color: #d90429;
+  background: #d90429;
+  color: #fff;
+}
+
+.table-action--primary:hover {
+  background: #fd052f;
+  border-color: #fd052f;
+}
+
+.table-action--danger {
+  border-color: #d90429;
+  color: #d90429;
+}
+
+.table-action--danger:hover {
+  background: #d90429;
+  color: #fff;
+}
+
+.table-action--success {
+  border-color: #1b9c85;
+  color: #1b9c85;
+}
+
+.table-action--success:hover {
+  background: #1b9c85;
+  color: #fff;
+}

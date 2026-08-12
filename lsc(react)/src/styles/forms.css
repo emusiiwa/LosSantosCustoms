@@ -1,0 +1,200 @@
+/* Staff CRUD "detail/edit" form look, shared by AddCar/CarDetails/AddEmployee/
+   EmployeeDetails/EditEmployee - ported from LSC/forms.css. The ".mounth" typo
+   is fixed to ".month" here as part of the natural port. */
+
+html,
+body {
+  min-height: 100%;
+}
+
+.forms-page,
+.forms-page div,
+.forms-page form,
+.forms-page input,
+.forms-page select,
+.forms-page p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #020102;
+}
+
+.forms-page h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.forms-page h3 {
+  margin: 12px 0;
+  color: #d90429;
+}
+
+.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+
+.main-block form {
+  width: 100%;
+  padding: 20px;
+}
+
+.main-block fieldset {
+  border: none;
+  border-top: 1px solid #d90429;
+}
+
+.account-details,
+.personal-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.account-details > div,
+.personal-details > div > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.account-details > div,
+.personal-details > div,
+.main-block input,
+.main-block label {
+  width: 100%;
+}
+
+.main-block label {
+  padding: 0 5px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-block input {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.main-block select,
+.children,
+.gender,
+.bdate-block {
+  width: calc(100% + 26px);
+  padding: 5px 0;
+}
+
+.main-block select {
+  background: transparent;
+}
+
+.gender input {
+  width: auto;
+}
+
+.gender label {
+  padding: 0 5px 0 0;
+}
+
+.bdate-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.birthdate select.day {
+  width: 35px;
+}
+
+.birthdate select.month {
+  width: calc(100% - 94px);
+}
+
+.birthdate input {
+  width: 38px;
+  vertical-align: unset;
+}
+
+.checkbox input,
+.children input {
+  width: auto;
+  margin: -2px 10px 0 0;
+}
+
+.checkbox a {
+  color: #d90429;
+}
+
+.checkbox a:hover {
+  color: #d90429;
+}
+
+/* Page-level form action buttons (Add/Save/Back), sized as normal buttons
+   instead of the original's edge-to-edge 100%-wide bar. Scoped under
+   .main-block so they win over the generic ".main-block input" width rule
+   above. */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.main-block .form-button {
+  display: inline-block;
+  width: auto;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 1.5px solid #020102;
+  background: transparent;
+  color: #020102;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.main-block .form-button:hover {
+  background: #020102;
+  color: #fff;
+}
+
+.main-block .form-button--primary {
+  border-color: #d90429;
+  background: #d90429;
+  color: #fff;
+}
+
+.main-block .form-button--primary:hover {
+  background: #fd052f;
+  border-color: #fd052f;
+}
+
+@media (min-width: 568px) {
+  .account-details > div,
+  .personal-details > div {
+    width: 50%;
+  }
+
+  .main-block label {
+    width: 40%;
+  }
+
+  .main-block input {
+    width: 60%;
+  }
+
+  .main-block select,
+  .children,
+  .gender,
+  .bdate-block {
+    width: calc(60% + 16px);
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "customer": "Thabo Nkosi",
+    "contact": "0711234567",
+    "car": "Mercedes-Benz G-Wagon",
+    "carId": 3,
+    "date": "2026-08-20",
+    "time": "10:00",
+    "status": "pending"
+  }
+]

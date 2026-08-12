@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "firstName": "Emmanuel",
+    "lastName": "Musiiwa",
+    "email": "emmanuel@lsc-demo.test",
+    "phone": "0789942877",
+    "role": "Salesman",
+    "dealership": "Johannesburg",
+    "password": "staffpass1"
+  },
+  {
+    "id": 2,
+    "firstName": "Roland",
+    "lastName": "Chuma",
+    "email": "roland@lsc-demo.test",
+    "phone": "0615850984",
+    "role": "Car Detailer",
+    "dealership": "Cape Town",
+    "password": "staffpass2"
+  },
+  {
+    "id": 3,
+    "firstName": "Casey",
+    "lastName": "Chuma",
+    "email": "casey@lsc-demo.test",
+    "phone": "0680993179",
+    "role": "Manager",
+    "dealership": "Durban",
+    "password": "staffpass3"
+  }
+]
